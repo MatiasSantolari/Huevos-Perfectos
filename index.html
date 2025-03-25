@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfect Eggs</title>
+    <link rel="icon" href="assets/egg_cracked_2.png" type="image/x-icon">
+    <!--Hoja de estilos personalizada-->
+    <link rel="stylesheet" href="style.css">
+    <!--fuente retro-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <h1>¿Como quieres tu huevo?</h1>
+    <button onclick="startTimer(5)">5 Minuto</button>
+    <button onclick="startTimer(8)">8 Minutos</button>
+    <button onclick="startTimer(10)">10 Minutos</button>
+    <button onclick="startTimer(12)">12 Minutos</button>
+
+    <div id="timer">Tiempo restante: --:--</div>
+    <div id="egg-container">
+        <img id="egg" src="assets/egg_1.png" alt="Huevo">
+    </div>
+
+    <audio id="egg_crunch" src="assets/egg_crunch.wav"></audio>
+    <audio id="alarm_sound" src="assets/alarm.wav"></audio>
+
+    <div class="cards-container">
+        <div class="card">
+            <img src="assets/avocado_toast.png" alt="Avocado Toast">
+            <div class="card-content">
+                <h2>Huevo Cocido 5 Minutos (Mollet)</h2>
+                <p>Perfecto para acompañar a tus "avocado toast". su textura firme con centro cremoso
+                    le da a tus desayunos ese plus que necesitás para empezar el día.
+                </p>
+            </div>
+        </div>
+    
+        <div class="card">
+            <img src="assets/tabla_picadas.png" alt="Tabla De Picadas">
+            <div class="card-content">
+                <h2>Huevo Cocido 8 Minutos</h2>
+                <p>La yema es un poco más firme, ideal para usar en entradas como puede ser "picadas", o 
+                    "tapas" antes del plato fuerte.</p>
+            </div>
+        </div>
+    
+        <div class="card">
+            <img src="assets/ensalada_rusa.png" alt="Ensalada Rusa">
+            <div class="card-content">
+                <h2>Huevo Cocido 10 Minutos</h2>
+                <p>Muy cocido,su centro a perdido casi toda su jogosidad, ideal para ensaladas o 
+                    sándwiches.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="assets/sandwich.png" alt="Sandwich">
+            <div class="card-content">
+                <h2>Huevo Cocido 12 Minutos</h2>
+                <p>Totalmente cocido, sus usos no varian demasiado con respecto al huevo cocido de 
+                    10 minutos. </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Matias Santolari</p> 
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js" integrity="sha512-f6bQMg6nkSRw/xfHw5BCbISe/dJjXrVGfz9BSDwhZtiErHwk7ifbmBEtF9vFW8UNIQPhV2uEFVyI/UHob9r7Cw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
